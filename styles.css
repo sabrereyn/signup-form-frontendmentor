@@ -1,0 +1,188 @@
+/* MOBILE PLANNED FIRST */
+
+:root {
+  font-size: 14px;
+}
+
+* {
+  text-align: center;
+  line-height: 1.5;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 100%, 74%);
+  background-image: url("images/bg-intro-mobile.png");
+  margin: 0;
+  color: #fff;
+}
+
+h1 {
+  line-height: normal;
+  font-size: 2rem;
+}
+
+form {
+  background-color: #fff;
+  padding: 7%;
+  border-radius: 10px;
+}
+
+input {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.container {
+  width: 90%;
+  margin: 10% auto 5%;
+}
+
+.info {
+  margin-bottom: 50px;
+}
+
+.try-card {
+  margin-bottom: 8%;
+  padding: 10px 20%;
+  background: hsl(248, 32%, 49%);
+  border-radius: 15px;
+}
+
+/* Input fields */
+
+.input-container {
+  width: 100%;
+  position: relative;
+  margin: 0 0 7%;
+}
+
+.input-txt {
+  border: 1px solid hsl(246, 25%, 77%);
+  text-align: start;
+  font-weight: 600;
+  padding: 13px;
+  outline-color: hsl(248, 32%, 49%);
+}
+
+.input-submit {
+  padding: 15px 20%;
+  margin: 0 0 7%;
+  border: none;
+  color: inherit;
+  background-color: hsl(154, 59%, 51%);
+  box-shadow: 0 5px hsl(154, 59%, 45%);
+}
+
+.drop-shadow {
+  box-shadow: 0 7px hsla(249, 10%, 26%, 0.3);
+}
+
+/* Terms of Service paragraph */
+.terms {
+  color: hsl(246, 25%, 77%);
+  font-size: 12px;
+  margin: 0;
+}
+
+.terms a {
+  text-decoration: none;
+  font-weight: 600;
+  color: hsl(0, 100%, 74%);
+}
+
+/* Errors */
+.error {
+  border-color: hsl(0, 100%, 74%);
+  border-width: 2px;
+  outline: none;
+}
+
+.error-icon {
+  content: url("images/icon-error.svg");
+  position: absolute;
+  bottom: 32px;
+  right: 18px;
+  visibility: hidden;
+}
+
+.error-msg {
+  margin: 0;
+  width: 100%;
+  color: hsl(0, 100%, 74%);
+  text-align: right;
+  padding-top: 3px;
+  font-size: 11px;
+  font-weight: 600;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.error-email::placeholder {
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
+}
+
+/* Frontend Mentor Attributions */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  font-size: inherit;
+  color: hsl(228, 45%, 44%);
+}
+
+/* Adapt to tablets */
+@media screen and (min-width: 768px) {
+  .container {
+    width: 80%;
+  }
+
+  .input-container {
+    margin-bottom: 4%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Adapt to laptops and computer monitors */
+@media screen and (min-width: 1024px) {
+  .container {
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    width: 80%;
+  }
+
+  .cards {
+    width: 50%;
+    padding-left: 5%;
+  }
+
+  .info {
+    margin: 0;
+    width: 50%;
+  }
+
+  .try-card {
+    margin-bottom: 5%;
+  }
+
+  h1 {
+    text-align: left;
+    font-size: 3rem;
+  }
+
+  .info p {
+    text-align: left;
+  }
+}
