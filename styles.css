@@ -78,6 +78,7 @@ input {
   color: inherit;
   background-color: hsl(154, 59%, 51%);
   box-shadow: 0 5px hsl(154, 59%, 45%);
+  -webkit-appearance: none;
 }
 
 .drop-shadow {
